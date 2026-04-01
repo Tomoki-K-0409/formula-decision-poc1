@@ -32,7 +32,7 @@ if file:
     # =========================
     df["AccX_smooth"] = df["AccX"].rolling(10, center=True).mean()
 
-    peaks, _ = find_peaks(df["AccX_smooth"], height=0.5, distance=300)
+    peaks, _ = find_peaks(df["AccX_smooth"], distance=100)
 
     laps = []
     for i in range(len(peaks)-1):
