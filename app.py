@@ -153,4 +153,5 @@ if file:
         else:
             st.success("大きな問題なし（安定）")
 
-
+# save point
+# before lap detection fix
